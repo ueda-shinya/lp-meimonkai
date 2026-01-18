@@ -1,0 +1,153 @@
+<?php
+session_start();
+
+$limit_seconds = 60;
+$now = time();
+$rate_limited = false;
+if (isset($_SESSION['last_submit_time']) && ($now - $_SESSION['last_submit_time']) < $limit_seconds) {
+  $rate_limited = true;
+}
+
+if (!isset($_POST['csrf_token'], $_SESSION['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
+  http_response_code(403);
+  exit("不正な送信が検出されました（CSRFトークン不一致）。");
+}
+
+// トークン破棄はまだ行わない（←ここが修正ポイント）
+
+mb_language("ja");
+mb_internal_encoding("UTF-8");
+$admin_email = "koukoku@meimonkai.co.jp,info@linnoa.net";
+$from_email = "no-reply@meimonkai.co.jp";
+
+function sanitize($key) {
+  return htmlspecialchars(trim($_POST[$key] ?? ''), ENT_QUOTES, 'UTF-8');
+}
+
+$name = sanitize("name");
+$furigana = sanitize("furigana");
+$zipcode = sanitize("postcode");
+$pref = sanitize("pref");
+$city = sanitize("city");
+$address = sanitize("address");
+$building = sanitize("building");
+$tel = sanitize("tel");
+$email = trim($_POST["email"] ?? '');
+$gender = sanitize("gender");
+$grade = sanitize("grade");
+$school_type = sanitize("school_type");
+$school_name = sanitize("school_name");
+$contact_person = sanitize("contact_person");
+$resou_status = sanitize("resou_status");
+$message = sanitize("message");
+$place = sanitize("place");
+$nickname = trim($_POST["nickname"] ?? '');
+
+if ($nickname !== "") {
+  http_response_code(403);
+  exit("不正なアクセスが検出されました。");
+}
+
+if (
+  $place === '' || $name === '' || $furigana === '' || $zipcode === '' ||
+  $pref === '' || $city === '' || $address === '' || $tel === '' ||
+  $email === '' || $gender === '' || $grade === '' ||
+  $contact_person === '' || $resou_status === '' ||
+  !filter_var($email, FILTER_VALIDATE_EMAIL)
+) {
+  http_response_code(400);
+  exit("入力内容に不備があります。必須項目をご確認ください。");
+}
+
+if (!preg_match('/^[0-9\-]+$/', $tel)) {
+  http_response_code(400);
+  exit("電話番号の形式が正しくありません。数字とハイフンのみ使用できます。");
+}
+
+$tel_digits = str_replace('-', '', $tel);
+if (strlen($tel_digits) < 10 || strlen($tel_digits) > 11) {
+  http_response_code(400);
+  exit("電話番号は10〜11桁の数字で入力してください。");
+}
+
+// ▼ バリデーションをすべて通過した後に、ここでトークン破棄（修正ポイント）
+unset($_SESSION['csrf_token']);
+
+$log_dir = __DIR__ . '/logs';
+$log_file = $log_dir . '/form.log';
+if (!is_dir($log_dir)) {
+  mkdir($log_dir, 0755, true);
+}
+$log_entry = sprintf(
+  "[%s] IP: %s | Email: %s | Name: %s\n",
+  date('Y-m-d H:i:s'),
+  $_SERVER['REMOTE_ADDR'] ?? 'UNKNOWN',
+  $email,
+  $name
+);
+file_put_contents($log_file, $log_entry, FILE_APPEND);
+
+$subject_user = "[名門会] 個別相談のお問い合わせありがとうございます。";
+$subject_admin = "中学受験:個別相談のお申込";
+
+$body_admin = <<<EOT
+LP(中学受験)より個別相談のお申込がはいりましたので、ご確認とご対応よろしくお願いいたします。
+
+【ご希望の教室】 {$place}
+【お名前】 {$name}
+【フリガナ】 {$furigana}
+【ご住所】 {$zipcode} {$pref} {$city} {$address} {$building}
+【電話番号】 {$tel}
+【メールアドレス】 {$email}
+【性別】 {$gender}
+【学年】 {$grade}
+【学校区分】 {$school_type}
+【学校名】 {$school_name}
+【お問い合わせされた方】 {$contact_person}
+【リソー教育グループのご利用状況】 {$resou_status}
+【ご質問・ご相談】
+{$message}
+EOT;
+
+$body_user = <<<EOT
+{$name} 様
+
+このメールはシステムからの自動返信メールです。
+
+この度は、名門会の夏季特別講習についてお問い合わせいただき、誠にありがとうございます。
+後ほど担当者から改めてお電話もしくはメールにてご連絡差し上げますので、しばらくお待ちください。
+
+以下は送信いただいた内容となります。
+-------------------------------------
+【ご希望の教室】 {$place}
+【お名前】 {$name}
+【フリガナ】 {$furigana}
+【ご住所】 {$zipcode} {$pref} {$city} {$address} {$building}
+【電話番号】 {$tel}
+【メールアドレス】 {$email}
+【性別】 {$gender}
+【学年】 {$grade}
+【学校区分】 {$school_type}
+【学校名】 {$school_name}
+【お問い合わせされた方】 {$contact_person}
+【リソー教育グループのご利用状況】 {$resou_status}
+【ご質問・ご相談】
+{$message}
+EOT;
+
+$headers = "From: {$from_email}";
+$success_user = mb_send_mail($email, $subject_user, $body_user, $headers);
+$success_admin = mb_send_mail($admin_email, $subject_admin, $body_admin, $headers);
+
+if ($success_user && $success_admin) {
+  $_SESSION['last_submit_time'] = $now;
+  echo "お問い合わせありがとうございます。確認メールを送信しました。\n迷惑メールフォルダに振り分けられる場合がありますので、そちらもあわせてご確認ください。";
+} else {
+  if ($rate_limited) {
+    $wait = $limit_seconds - ($now - $_SESSION['last_submit_time']);
+    http_response_code(429);
+    exit("短時間に連続して送信されています。{$wait}秒後に再送信してください。");
+  }
+  http_response_code(500);
+  exit("メール送信中にエラーが発生しました。時間を置いて再度お試しください。");
+}

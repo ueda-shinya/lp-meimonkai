@@ -1,0 +1,734 @@
+<?php
+session_start();
+$_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+?>
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-MKW6CZF');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>受験直前!!最後の切り札＜入試直前・新学期準備＞特別講習|名門会</title>
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta property="og:locale" content="ja_JP">
+    <meta http-equiv="Cache-Control" content="no-store">
+    <link rel="apple-touch-icon" href="./assets/images/favicon.ico" sizes="180x180">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" href="./assets/images/favicon.ico" sizes="any">
+    <link rel="stylesheet" type="text/css" href="./assets/css/destyle.css">
+    <link rel="stylesheet" href="./assets/css/style.css?251212">
+    <link rel="stylesheet" href="./assets/css/accordion.css?251210">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKW6CZF" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+    </header>
+    <main>
+      <img src="./assets/images/lp_01.webp" width="750" height="1180">
+      <!-- cta -->
+      <div class="cta-area cta-lp_02">
+        <img src="./assets/images/lp_02.webp" width="750" height="2550" decoding="async" loading="lazy">
+        <div class="cta-btns lp_02-btns">
+          <a href="tel:0120-14-3759" class="btn-tel_a">
+            <img class="btn-cta_img  cta-fv cta_a" src="./assets/images/tel_cta.webp" alt="0120-14-3759" width="742"
+              height="256" decoding="async" loading="lazy">
+          </a>
+          <a href="#contact-form" class="btn-mail_a">
+            <img class="btn-cta_img  cta-fv cta_a" src="./assets/images/mail_cta.webp" alt="メールで相談する" width="742"
+              height="190" decoding="async" loading="lazy">
+          </a>
+        </div>
+      </div>
+      <!--  -->
+      <img src="./assets/images/lp_03.webp" width="750" height="2400" decoding="async" loading="lazy">
+      <img src="./assets/images/lp_04.webp" width="750" height="1504" decoding="async" loading="lazy">
+      <img src="./assets/images/lp_05.webp" width="750" height="1926" decoding="async" loading="lazy">
+      <img src="./assets/images/lp_06.webp" width="750" height="1180" decoding="async" loading="lazy">
+      <img src="./assets/images/lp_07.webp" width="750" height="4380" decoding="async" loading="lazy">
+      <!-- cta -->
+      <div class="cta-area cta-lp_08">
+        <img src="./assets/images/lp_08.webp" width="750" height="1077" decoding="async" loading="lazy">
+        <div class="cta-btns lp_08-btns">
+          <a href="tel:0120-14-3759" class="btn-tel_a">
+            <img class="btn-cta_img  cta-fv cta_a" src="./assets/images/tel_cta.webp" alt="0120-14-3759" width="742"
+              height="256" decoding="async" loading="lazy">
+          </a>
+          <a href="#contact-form" class="btn-mail_a">
+            <img class="btn-cta_img  cta-fv cta_a" src="./assets/images/mail_cta.webp" alt="メールで相談する" width="742"
+              height="190" decoding="async" loading="lazy">
+          </a>
+        </div>
+      </div>
+      <!--  -->
+      <img src="./assets/images/lp_09.webp" width="750" height="790" decoding="async" loading="lazy">
+      <!-- アコーディオン -->
+      <section id="accordion" class="accordion js-accordion" data-accordion>
+        <div class="accordion__outer">
+          <div class="accordion__list">
+            <!-- item 1 -->
+            <article class="accordion__item" data-accordion-item>
+              <h2 class="accordion__head">
+                <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="acc-panel-1"
+                  id="acc-trigger-1" data-accordion-trigger>
+                  <span class="accordion__trigger-label">旧帝・東京科学・一橋大 志望者向け</span>
+                  <span class="accordion__trigger-icon" aria-hidden="true"></span>
+                </button>
+              </h2>
+              <div class="accordion__panel" id="acc-panel-1" role="region" aria-labelledby="acc-trigger-1" hidden
+                data-accordion-panel>
+                <div class="accordion__body">
+                  <!--  -->
+                  <div>
+                    <h3 class="accordion__body_h3">東京大学|学校推薦型<span>選抜</span></h3>
+                    <div class="accordion__body-inner inner-flex ">
+                      <h4 class="accordion__badge">共通テスト</h4>
+                      <p class="accordion__text">一般選抜と同水準の高得点が必須</p>
+                    </div>
+                    <div class="accordion__body-inner inner-flex ">
+                      <h4 class="accordion__badge">試験内容</h4>
+                      <p class="accordion__text">書類・面接・口頭試問<br>極めて高い完成度が求められる</p>
+                    </div>
+                    <div class="accordion__body-inner inner-block">
+                      <h4 class="accordion__badge">求められる人物像</h4>
+                      <p class="accordion__text">APとの整合性が最重要。特定分野で突出したポテンシャルを持つ受験者が求められる。</p>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div>
+                    <h3 class="accordion__body_h3"> 京都大学|特色入試<br><span>[総合型選抜&lt;自己推薦&gt; / 学校推薦型選抜&lt;公募&gt;]</span>
+                    </h3>
+                    <div class="accordion__body-inner inner-flex ">
+                      <h4 class="accordion__badge">共通テスト</h4>
+                      <p class="accordion__text">一般選抜と同水準の高得点が必須</p>
+                    </div>
+                    <div class="accordion__body-inner inner-block">
+                      <h4 class="accordion__badge">求められる人物像</h4>
+                      <p class="accordion__text">探求力・独自性・研究適正・将来像が重視される特に探求心を持っている人材が求められるので「学びの設計書」が重要。</p>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div>
+                    <h3 class="accordion__body_h3">大阪大学|総合型<span>選抜</span> / 学校推薦型<span>選抜</span></h3>
+                    <div class="accordion__body-inner inner-flex ">
+                      <h4 class="accordion__badge">共通テスト</h4>
+                      <p class="accordion__text">一般選抜と同水準の高得点が必須</p>
+                    </div>
+                    <div class="accordion__body-inner inner-flex ">
+                      <h4 class="accordion__badge">試験内容</h4>
+                      <p class="accordion__text">面接・小論文の難易度が高い<br>面接＝口頭試問</p>
+                    </div>
+                    <div class="accordion__body-inner inner-block">
+                      <h4 class="accordion__badge">求められる人物像</h4>
+                      <p class="accordion__text">多様な人材を求めている。また、学部ごとに求める人物像が明確に分かれている。</p>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div>
+                    <h3 class="accordion__body_h3"> 東京科学大学|総合型<span>選抜</span> /
+                      学校推薦型<span>選抜</span><br><span>(理工学系・医師学系ともに実施)</span></h3>
+                    <div class="accordion__body-inner inner-flex ">
+                      <h4 class="accordion__badge">共通テスト</h4>
+                      <p class="accordion__text">一般選抜と同水準の高得点が必須</p>
+                    </div>
+                    <div class="accordion__body-inner inner-block ">
+                      <h4 class="accordion__badge">試験内容</h4>
+                      <p class="accordion__text">
+                        理工学系では、女子枠の拡大と超難問の筆記試験と口頭試問が課される。<br>医師学系では、小論文や面接は「データ分析」や「論理的思考力」が問われる。 </p>
+                    </div>
+                    <div class="accordion__body-inner inner-block">
+                      <h4 class="accordion__badge">求められる人物像</h4>
+                      <p class="accordion__text"> 高い専門性と研究への意欲、特に科学技術分野での優れた能力や活動実績が求められる。</p>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div>
+                    <h3 class="accordion__body_h3">一橋大学|学校推薦型<span>選抜</span></h3>
+                    <div class="accordion__body-inner inner-flex ">
+                      <h4 class="accordion__badge">共通テスト</h4>
+                      <p class="accordion__text">一般選抜と同水準の高得点が必須</p>
+                    </div>
+                    <div class="accordion__body-inner inner-block">
+                      <h4 class="accordion__badge">求められる人物像</h4>
+                      <p class="accordion__text">
+                        産業界のリーダーに相応しい主体性や社会問題に対する関心が高い人材が求められる。<br>経済学部やソーシャル・データサイエンス(SDS)<br>学部はもちろん、商学部や社会学部でも、論理的思考力(数学的要素)は高く評価される。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="accordion__footer">
+                  <button type="button" class="accordion__close" data-accordion-close> ×　閉じる </button>
+                </div>
+              </div>
+            </article>
+            <!-- item 2 -->
+            <article class="accordion__item" data-accordion-item>
+              <h2 class="accordion__head">
+                <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="acc-panel-1"
+                  id="acc-trigger-1" data-accordion-trigger>
+                  <span class="accordion__trigger-label">早慶上智 志望者向け</span>
+                  <span class="accordion__trigger-icon" aria-hidden="true"></span>
+                </button>
+              </h2>
+              <div class="accordion__panel" id="acc-panel-1" role="region" aria-labelledby="acc-trigger-1" hidden
+                data-accordion-panel>
+                <div class="accordion__body">
+                  <!--  -->
+                  <div>
+                    <h3 class="accordion__body_h3">慶應義塾大学|総合型<span>選抜</span><br><span>[FIT入試・分野思考型入試など]</span></h3>
+                    <div class="accordion__body-inner inner-block">
+                      <h4 class="accordion__badge">実施学部</h4>
+                      <p class="accordion__text">文学部 / 法学部 / 理工学部 / 総合政策学部 /<br>環境情報学部 / 看護医療学部</p>
+                    </div>
+                    <div class="accordion__body-inner inner-block ">
+                      <h4 class="accordion__badge">試験の特徴と内容</h4>
+                      <p class="accordion__text">特にSFCが高倍率。<br>学部ごとのAP(アドミッションポリシー)を深く理解していることが必須。</p>
+                    </div>
+                    <div class="accordion__body-inner inner-block">
+                      <h4 class="accordion__badge">求められる人物像</h4>
+                      <p class="accordion__text">明確な目標と主体的な活動実績が重要。</p>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div>
+                    <h3 class="accordion__body_h3">慶応義塾大学|学校推薦型<span>選抜</span><br><span>(指定校)</span></h3>
+                    <div class="accordion__body-inner inner-flex ">
+                      <h4 class="accordion__badge">実施部門</h4>
+                      <p class="accordion__text">経済学部 / 法学部 / 商学部 /<br>理工学部 / 薬学部薬学科</p>
+                    </div>
+                    <div class="accordion__body-inner inner-block  __non_border">
+                      <h4 class="accordion__badge">試験の特徴と内容</h4>
+                      <p class="accordion__text">出願条件が厳しく、指定校推薦が中心。<br>高い評定平均(4.2以上)が必要。</p>
+                    </div>
+                    <!--  -->
+                    <h3 class="accordion__body_h3">早稲田大学|総合型<span>選抜</span></h3>
+                    <div class="accordion__body-inner inner-flex ">
+                      <h4 class="accordion__badge">実施学部</h4>
+                      <p class="accordion__text">国際教養学部(SILS) /<br>政治経済学部 / 社会科学部など</p>
+                    </div>
+                    <div class="accordion__body-inner inner-block ">
+                      <h4 class="accordion__badge">試験の特徴と内容</h4>
+                      <p class="accordion__text">英語外部試験スコアが鍵。<br>学部によって大学入学共通テストの受験が必要。</p>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div>
+                    <h3 class="accordion__body_h3">早稲田大学|学校推薦型<span>選抜</span></h3>
+                    <div class="accordion__body-inner inner-flex ">
+                      <h4 class="accordion__badge">実施学部</h4>
+                      <p class="accordion__text">指定校中心。一部公募制あり。</p>
+                    </div>
+                    <div class="accordion__body-inner inner-block __non_border">
+                      <h4 class="accordion__badge">試験の特徴と内容</h4>
+                      <p class="accordion__text">高い評定(4.2以上)が必要。<br>大学・学部が求める人物像を理解した書類作成と面接対策が必要。</p>
+                    </div>
+                    <!--  -->
+                    <h3 class="accordion__body_h3">上智大学|学校推薦型<span>選抜</span><br><span>(公募制 / 指定校制)</span></h3>
+                    <div class="accordion__body-inner inner-flex ">
+                      <h4 class="accordion__badge">実施学部</h4>
+                      <p class="accordion__text">多くの学部で実施。</p>
+                    </div>
+                    <div class="accordion__body-inner inner-block">
+                      <h4 class="accordion__badge">試験の特徴と内容</h4>
+                      <p class="accordion__text">評定4.0以上+英語外部試験スコアが必須。<br>「レポート等特定課題」の対策が重要。</p>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="accordion__footer">
+                  <button type="button" class="accordion__close" data-accordion-close> ×　閉じる </button>
+                </div>
+              </div>
+            </article>
+            <!-- item 3 -->
+            <article class="accordion__item" data-accordion-item>
+              <h2 class="accordion__head">
+                <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="acc-panel-1"
+                  id="acc-trigger-1" data-accordion-trigger>
+                  <span class="accordion__trigger-label">国公立 医学部医学科 志望者向け</span>
+                  <span class="accordion__trigger-icon" aria-hidden="true"></span>
+                </button>
+              </h2>
+              <div class="accordion__panel" id="acc-panel-1" role="region" aria-labelledby="acc-trigger-1" hidden
+                data-accordion-panel>
+                <div class="accordion__body">
+                  <!--  -->
+                  <div>
+                    <h3 class="accordion__body_h3">東北大学|総合型<span>選抜</span>Ⅱ期</h3>
+                    <div class="accordion__body-inner inner-block ">
+                      <h4 class="accordion__badge">試験の特徴と内容</h4>
+                      <p class="accordion__text">
+                        志望理由書、活動報告書などによる審査以外に、筆記試験と面接が課される。<br>筆記試験は、英語、数学、理科の融合問題や論理的思考力や独創性を問う記述式の難問が出題。</p>
+                    </div>
+                    <div class="accordion__body-inner inner-block ">
+                      <h4 class="accordion__badge">求められる人物像</h4>
+                      <p class="accordion__text">研究医の発掘(育成)が目的。<br>科学オリンピック出場経験者や、高校時代に独自の科学研究を行っていた人に向いている。</p>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div>
+                    <h3 class="accordion__body_h3">筑波大学|学校推薦型<span>選抜</span><br><span>[一般枠]</span></h3>
+                    <div class="accordion__body-inner inner-block ">
+                      <h4 class="accordion__badge">試験の特徴と内容</h4>
+                      <p class="accordion__text"> 大学入学共通テストを課さず、独自の<span
+                          class="__fw600">高難度・適性試験</span>を実施。<br>独自のハイレベルな「適正検査」が課される。<br>英語・数学・理科の記述中心の<span
+                          class="__fw600">高度な筆記試験</span>が課される入試方式。</p>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div>
+                    <h3 class="accordion__body_h3">金沢大学|学校推薦型<span>選抜</span>Ⅱ<br><span>[KUGS特別入試]一般枠・特別枠あり</span></h3>
+                    <div class="accordion__body-inner inner-block ">
+                      <h4 class="accordion__badge">試験の特徴と内容</h4>
+                      <p class="accordion__text">
+                        高校在学中に大学が提供する「KUGS高大接続プログラム」を受講し、課題レポートを提出し「出願資格」を得る。<br>最終結果は、大学入学共通テスト得点率で決まる。</p>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div>
+                    <h3 class="accordion__body_h3">神戸大学|総合型<span>選抜</span><br><span>[「志」特別選抜]</span></h3>
+                    <div class="accordion__body-inner inner-block ">
+                      <h4 class="accordion__badge">試験の特徴と内容</h4>
+                      <p class="accordion__text"> 一般的な面接に加え、模擬講義→レポート作成→口頭試問を実施。<br>暗記ではなく、<span
+                          class="__fw600">その場で知識を吸収し論理的に再構築する力</span>を評価。<br>合否には、大学入学共通テストの得点率も大きく影響。 </p>
+                    </div>
+                    <div class="accordion__body-inner inner-block ">
+                      <h4 class="accordion__badge">求められる人物像</h4>
+                      <p class="accordion__text">研究者・医師としての資質(思考力・地頭の良さ)が重視される。</p>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div>
+                    <h3 class="accordion__body_h3">広島大学|総合型<span>選抜</span><br><span>[光り輝く入試]</span></h3>
+                    <div class="accordion__body-inner inner-block ">
+                      <h4 class="accordion__badge">試験の特徴と内容</h4>
+                      <p class="accordion__text"> 大学入学共通テスト+自己推薦書・調査書・面接で総合評価。<br>高校時代の探究活動・コンテスト入賞・実績が合否に直結。特に<span
+                          class="__fw600">ポートフォリオ(活動実績)</span>の充実度が大きく影響。</p>
+                    </div>
+                    <div class="accordion__body-inner inner-block">
+                      <h4 class="accordion__badge">求められる人物像</h4>
+                      <p class="accordion__text">科学オリンピック出場者、英検1級保持者。<br>生徒会活動やポランティアで顕著なリーダーシップを発揮した人向け。</p>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="accordion__footer">
+                  <button type="button" class="accordion__close" data-accordion-close> ×　閉じる </button>
+                </div>
+              </div>
+            </article>
+            <!-- item 4 -->
+            <article class="accordion__item" data-accordion-item>
+              <h2 class="accordion__head">
+                <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="acc-panel-1"
+                  id="acc-trigger-1" data-accordion-trigger>
+                  <span class="accordion__trigger-label">私立 医学部医学科 志望者向け</span>
+                  <span class="accordion__trigger-icon" aria-hidden="true"></span>
+                </button>
+              </h2>
+              <div class="accordion__panel" id="acc-panel-1" role="region" aria-labelledby="acc-trigger-1" hidden
+                data-accordion-panel>
+                <div class="accordion__body">
+                  <!--  -->
+                  <h3 class="accordion__body_h3">順天堂大学|総合型<span>選抜</span><br><span>[研究医特別選抜]</span></h3>
+                  <div class="accordion__body-inner inner-block __non_border">
+                    <div class="accordion__text">
+                      <ul class="accordion__text_ul">
+                        <li class="accordion__text_li">大学入学共通テスト・英語資格 / 検定試験審査<br>(英語に最大25点加点)</li>
+                        <li class="accordion__text_li">小論文・面談・プレゼンテーション<br>(口頭発表:約10分・質疑応答:10分)</li>
+                        <li class="accordion__text_li">大学入学共通テストは、一般選抜と変わらない高い得点率が求められる。</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <h3 class="accordion__body_h3">大阪医科薬科大学|総合型<span>選抜</span><br><span>[至誠仁術]</span></h3>
+                  <div class="accordion__body-inner inner-block __non_border">
+                    <div class="accordion__text">
+                      <ul class="accordion__text_ul">
+                        <li class="accordion__text_li">大学入学共通テスト・小論文・面接<br>(複数回実施 / 出願書類を面接資料として利用)</li>
+                        <li class="accordion__text_li">大学入学共通テストは、一般選抜と変わらない高い得点率が求められる。</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <h3 class="accordion__body_h3">東北医科薬科大学|総合型<span>選抜</span></h3>
+                  <div class="accordion__body-inner inner-block __non_border">
+                    <div class="accordion__text">
+                      <ul class="accordion__text_ul">
+                        <li class="accordion__text_li">書類選考(自己推薦書・推薦書・活動実績) / <br>小論文(英・数・理)/面接</li>
+                        <li class="accordion__text_li">「小論文」という名称での筆記試験の点数が最重要となる。</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <h3 class="accordion__body_h3">自治医科大学|総合型<span>選抜</span>/学校推薦型<span>選抜</span></h3>
+                  <div class="accordion__body-inner inner-block __non_border">
+                    <div class="accordion__text">
+                      <ul class="accordion__text_ul">
+                        <li class="accordion__text_li">書類審査 / 基礎学力検査(英・数)/面接</li>
+                        <li class="accordion__text_li">基礎学力検査(理科なし)の点数が最重要となる。</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <h3 class="accordion__body_h3">帝京大学|総合型<span>選抜</span> / 学校推薦型<span>選抜</span></h3>
+                  <div class="accordion__body-inner inner-block ">
+                    <h4 class="accordion__badge">総合型選抜</h4>
+                    <div class="accordion__text">
+                      <ul class="accordion__text_ul">
+                        <li class="accordion__text_li">活動報告書 / 調査書等 / 論述課題 / グループディスカッション / 面接</li>
+                        <li class="accordion__text_li">大学入学共通テスト(英・数・理2)</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion__body-inner inner-block ">
+                    <h4 class="accordion__badge">学校推薦型総合型選抜</h4>
+                    <div class="accordion__text">
+                      <ul class="accordion__text_ul">
+                        <li class="accordion__text_li">基礎能力適性検査(英・数・理1) / 小論文</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion__body-inner inner-block __non_border">
+                    <p class="accordion__text">大学入学共通テスト・基礎能力適性検査の点数が最重要となる。</p>
+                  </div>
+                  <!--  -->
+                  <h3 class="accordion__body_h3">
+                    <div class="accordion__body_h3__flex __item_center">
+                      <div>東海大学</div>
+                      <div class="accordion__body_h3__border-left">
+                        <div class="accordion__body_h3__left">総合型<span>選抜[希望の星育成]</span></div>
+                        <div class="accordion__body_h3__left">特別<span>選抜[展学のすすめ]</span></div>
+                      </div>
+                    </div>
+                  </h3>
+                  <div class="accordion__body-inner inner-block ">
+                    <h4 class="accordion__badge">総合型選抜</h4>
+                    <div class="accordion__text">
+                      <ul class="accordion__text_ul">
+                        <li class="accordion__text_li">書類審査 / 小論文 / オブザベーション評価 / 面接 / 大学入学共通テスト(英・数・理2)</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion__body-inner inner-block ">
+                    <h4 class="accordion__badge">学校推薦型総合型選抜</h4>
+                    <div class="accordion__text">
+                      <ul class="accordion__text_ul">
+                        <li class="accordion__text_li">書類審査 / 小論文 / 英語 / 個人面接</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion__body-inner inner-block __non_border">
+                    <p class="accordion__text">大学入学共通テスト・英語の点数が最重要となる。</p>
+                  </div>
+                  <!--  -->
+                  <h3 class="accordion__body_h3">東京女子医科大学|学校推薦型<span>選抜</span></h3>
+                  <div class="accordion__body-inner inner-block __non_border">
+                    <div class="accordion__text">
+                      <ul class="accordion__text_ul">
+                        <li class="accordion__text_li">小グループ討論 / 思考力試験 / 小論文</li>
+                        <li class="accordion__text_li">面接(志望理由書・自己評価書・調査書を参考に多面的に評価)</li>
+                        <li class="accordion__text_li">思考力試験の点数が最重要</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <h3 class="accordion__body_h3">東邦大学 | 推薦入試<br><span>[付属校制]</span></h3>
+                  <div class="accordion__body-inner inner-block __non_border ">
+                    <div class="accordion__text">
+                      <ul class="accordion__text_ul">
+                        <li class="accordion__text_li">適正試験(英・数・理2) / 基礎学力(論理的思考力、科学的判断力、文章や図表の理解度) / 面接(グループ討論・MMI)
+                        </li>
+                        <li class="accordion__text_li">適性検査の点数が最重要</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <h3 class="accordion__body_h3">
+                    <div class="accordion__body_h3__flex __item_center">
+                      <div>金沢医科<br>大学</div>
+                      <div class="accordion__body_h3__border-left">
+                        <div class="accordion__body_h3__left">総合型<span>選抜[卒業生子女入試]</span></div>
+                        <div class="accordion__body_h3__left">学校校推薦型<span>選抜[指定校・指定地域]</span></div>
+                      </div>
+                    </div>
+                  </h3>
+                  <div class="accordion__body-inner inner-block ">
+                    <h4 class="accordion__badge">総合型選抜</h4>
+                    <div class="accordion__text">
+                      <ul class="accordion__text_ul">
+                        <li class="accordion__text_li">基礎学力テスト(英・数・理2) / 自己推薦書(指定課題含め800字程度) / 個人面接</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion__body-inner inner-block">
+                    <h4 class="accordion__badge">学校推薦型総合型選抜</h4>
+                    <div class="accordion__text">
+                      <ul class="accordion__text_ul">
+                        <li class="accordion__text_li">基礎学力テスト(英・数・理2) / 自己推薦書(指定課題含め800字程度) / 個人面接 / 高等学校長推薦書</li>
+                      </ul>
+                    </div>
+                    <p class="accordion__text">[注]指定地域志願者は、別途氷見市長の推薦書必要</p>
+                  </div>
+                  <div class="accordion__body-inner inner-block __non_border">
+                    <p class="accordion__text">基礎学力テストの点数が最重要となる。</p>
+                  </div>
+                  <!--  -->
+                  <h3 class="accordion__body_h3">藤田医科大学|ふじた未来入試<br><span>[一般枠 / 独創一理枠&lt;卒業生子女枠&gt;]</span></h3>
+                  <div class="accordion__body-inner inner-block __non_border">
+                    <div class="accordion__text">
+                      <ul class="accordion__text_ul">
+                        <li class="accordion__text_li">学習能力適性検査(英・数) / 小論文 / 講義課題</li>
+                        <li class="accordion__text_li">面接<br>(個人面接&lt;MMI&gt;・グループディスカッション)</li>
+                        <li class="accordion__text_li">学習能力適性検査結果が最重要となる。</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <h3 class="accordion__body_h3">兵庫医科大学|総合型<span>選抜</span><br><span>[卒業生子女枠 / エキスパート養成入試]</span></h3>
+                  <div class="accordion__body-inner inner-block ">
+                    <h4 class="accordion__badge">卒業生子女枠</h4>
+                    <div class="accordion__text">
+                      <ul class="accordion__text_ul">
+                        <li class="accordion__text_li">適性検査(英・理2) / 小論文 / プレゼンテーション試験 / 個人面接 / 調査書 / 活動報告書 / 事故推薦書</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion__body-inner inner-block">
+                    <h4 class="accordion__badge">エキスパート養成入試</h4>
+                    <div class="accordion__text">
+                      <ul class="accordion__text_ul">
+                        <li class="accordion__text_li">適性検査(英・数・理2) / 小論文 / プレゼンテーション試験 / 個人面接 / 志望理由書 / 調査書 / 活動報告書
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion__body-inner inner-block __non_border">
+                    <p class="accordion__text">適性検査の点数が最重要となる。</p>
+                  </div>
+                  <!--  -->
+                  <h3 class="accordion__body_h3">
+                    <div class="accordion__body_h3__flex __item_center">
+                      <div>産業医科<br>大学</div>
+                      <div class="accordion__body_h3__border-left">
+                        <div class="accordion__body_h3__left">総合型<span>選抜(ラマツィーニ選抜)</span></div>
+                        <div class="accordion__body_h3__left">学校校推薦型<span>選抜</span></div>
+                      </div>
+                    </div>
+                  </h3>
+                  <div class="accordion__body-inner inner-block ">
+                    <h4 class="accordion__badge">総合型選抜</h4>
+                    <div class="accordion__text">
+                      <ul class="accordion__text_ul">
+                        <li class="accordion__text_li">プレゼンテーション試験<br>(発表資料作成:90分間、発表:10分間、質疑応答:約20分間)</li>
+                        <li class="accordion__text_li">大学入学共通テスト(英・数・理2)</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion__body-inner inner-block ">
+                    <h4 class="accordion__badge">学校推薦型総合型選抜</h4>
+                    <div class="accordion__text">
+                      <ul class="accordion__text_ul">
+                        <li class="accordion__text_li">総合問題(英文課題・自然科学課題) / 面接 / 推薦書 / 調査書 / 志望理由書 / 特別活動記録</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="accordion__body-inner inner-block __non_border">
+                    <p class="accordion__text">両方式とも、大学入学共通テストでは一般選抜並みの高得点率が求められる。<br>総合型では特に「総合問題」の点数が最重評価となる。</p>
+                  </div>
+                  <!--  -->
+                  <div class="accordion__body-inner inner-block __non_border">
+                    <h3 class="accordion__body_h3">
+                      私立医学部は、筆記試験(学力テスト)以外にも「問題解決能力」「人物評価」「面接」「出願書類」の比重が一般受験より圧倒的に大きいため、個別指導効果が非常に高い領域です。</h3>
+                  </div>
+                  <!--  -->
+                </div>
+                <div class="accordion__footer">
+                  <button type="button" class="accordion__close" data-accordion-close> ×　閉じる </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <!-- cta -->
+      <div class="cta-area cta-lp_10">
+        <img src="./assets/images/lp_10.webp" width="750" height="1107" decoding="async" loading="lazy">
+        <div class="cta-btns lp_10-btns">
+          <a href="tel:0120-14-3759" class="btn-tel_a">
+            <img class="btn-cta_img  cta-fv cta_a" src="./assets/images/tel_cta.webp" alt="0120-14-3759" width="742"
+              height="256" decoding="async" loading="lazy">
+          </a>
+          <a href="#contact-form" class="btn-mail_a">
+            <img class="btn-cta_img  cta-fv cta_a" src="./assets/images/mail_cta.webp" alt="メールで相談する" width="742"
+              height="190" decoding="async" loading="lazy">
+          </a>
+        </div>
+      </div>
+      <!--  -->
+      <img src="./assets/images/lp_11.webp" width="750" height="2193" decoding="async" loading="lazy">
+      <img src="./assets/images/lp_12.webp" width="750" height="1650" decoding="async" loading="lazy">
+      <img src="./assets/images/lp_13.webp" width="750" height="1700" decoding="async" loading="lazy">
+      <img src="./assets/images/lp_14.webp" width="750" height="1750" decoding="async" loading="lazy">
+      <img src="./assets/images/lp_15.webp" width="750" height="1710" decoding="async" loading="lazy">
+      <!-- 
+      
+      -->
+      <!--  -->
+      <form id="contact-form" name="contact" action="sendmail.php" method="POST">
+        <h2>無料個別相談のお申込み</h2>
+        <!-- ご希望の場所 -->
+        <fieldset>
+          <legend>ご希望の場所 <span style="color:red;font-size:0.75em;">※必須</span></legend>
+          <label><input type="radio" name="place" value="教室" required> 教室</label>
+          <label><input type="radio" name="place" value="ご自宅" required> ご自宅</label>
+          <label><input type="radio" name="place" value="オンライン" required> オンライン</label>
+        </fieldset>
+        <div>
+          <label>お名前 <span style="color:red;font-size:0.75em;">※必須</span>
+            <input type="text" name="name" required>
+          </label>
+        </div>
+        <div>
+          <label>フリガナ <span style="color:red;font-size:0.75em;">※必須</span>
+            <input type="text" name="furigana" required>
+          </label>
+        </div>
+        <!-- 郵便番号 自動入力対応 -->
+        <div>
+          <label>郵便番号 <span style="color:red;font-size:0.75em;">※必須</span><input type="text" name="postcode"
+              placeholder="" required>
+          </label>
+        </div>
+        <div>
+          <label>都道府県 <span style="color:red;font-size:0.75em;">※必須</span><input type="text" name="pref" required>
+          </label>
+        </div>
+        <div>
+          <label>市区町村 <span style="color:red;font-size:0.75em;">※必須</span><input type="text" name="city" required>
+          </label>
+        </div>
+        <div>
+          <label>町名・番地 <span style="color:red;font-size:0.75em;">※必須</span><input type="text" name="address" required>
+          </label>
+        </div>
+        <div>
+          <label>建物名・部屋番号<input type="text" name="building">
+          </label>
+        </div>
+        <div>
+          <label>電話番号 <span style="color:red;font-size:0.75em;">※必須</span>
+            <input type="tel" name="tel" required>
+          </label>
+        </div>
+        <div>
+          <label>メールアドレス <span style="color:red;font-size:0.75em;">※必須</span>
+            <input type="email" name="email" required>
+          </label>
+        </div>
+        <fieldset>
+          <legend>性別 <span style="color:red;font-size:0.75em;">※必須</span></legend>
+          <label><input type="radio" name="gender" value="男性" required> 男性</label>
+          <label><input type="radio" name="gender" value="女性" required> 女性</label>
+        </fieldset>
+        <fieldset>
+          <legend>学年 <span style="color:red;font-size:0.75em;">※必須</span></legend>
+          <?php
+        $grades = ['小学生未満', '小学1年生', '小学2年生', '小学3年生', '小学4年生', '小学5年生', '小学6年生', '中学1年生', '中学2年生', '中学3年生', '高校1年生', '高校2年生', '高校3年生', '高校卒'];
+        foreach ($grades as $grade) {
+          echo "<label><input type='radio' name='grade' value='{$grade}' required> {$grade}</label>\n";
+        }
+        ?>
+        </fieldset>
+        <fieldset>
+          <legend>通われている学校</legend>
+          <label><input type="radio" name="school_type" value="公立"> 公立</label>
+          <label><input type="radio" name="school_type" value="国立"> 国立</label>
+          <label><input type="radio" name="school_type" value="私立"> 私立</label>
+        </fieldset>
+        <div class="school">
+          <label>通われている学校名<br>
+            <input type="text" name="school_name">
+            <small>※「学年」で「高校卒」を選択した方は、卒業された学校名をご入力願います。</small>
+          </label>
+        </div>
+        <fieldset>
+          <legend>お問い合わせされる方 <span style="color:red;font-size:0.75em;">※必須</span></legend>
+          <label><input type="radio" name="contact_person" value="生徒ご本人" required> 生徒ご本人</label>
+          <label><input type="radio" name="contact_person" value="お父様" required> お父様</label>
+          <label><input type="radio" name="contact_person" value="お母様" required> お母様</label>
+          <label><input type="radio" name="contact_person" value="他保護者様" required> 他保護者様</label>
+          <label><input type="radio" name="contact_person" value="兄弟・姉妹" required> 兄弟・姉妹</label>
+          <label><input type="radio" name="contact_person" value="その他" required> その他</label>
+        </fieldset>
+        <fieldset>
+          <legend>リソー教育グループのご利用状況 <span style="color:red;font-size:0.75em;">※必須</span></legend>
+          <label><input type="radio" name="resou_status" value="会員ではない" required> 会員ではない</label>
+          <label><input type="radio" name="resou_status" value="名門会会員" required> 名門会会員</label>
+          <label><input type="radio" name="resou_status" value="TOMEIKAI会員" required> TOMEIKAI会員</label>
+          <label><input type="radio" name="resou_status" value="TOMAS会員" required> TOMAS会員</label>
+          <label><input type="radio" name="resou_status" value="その他リソー教育グループ会員" required> その他リソー教育グループ会員</label>
+        </fieldset>
+        <div>
+          <label>ご質問・ご相談<textarea name="message" rows="5" placeholder="ご自由にご記入ください"></textarea>
+          </label>
+        </div>
+        <!-- CSRFトークン -->
+        <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+        <!-- ハニーポット -->
+        <div style="position:absolute; left:-9999px;" aria-hidden="true">
+          <label>ニックネーム（空欄にしてください）： <input type="text" name="nickname" tabindex="-1" autocomplete="off">
+          </label>
+        </div>
+        <button type="submit">送信</button>
+      </form>
+      <!--  -->
+    </main>
+    <footer style="display:none;">
+      <a class="footer_a" href="#contact-form">
+        <img src="./assets/images/cta@2x.webp" alt="" width="344" height="62" decoding="async" loading="lazy">
+      </a>
+    </footer>
+    <!-- スクリプト -->
+    <script src="./assets/js/hide-footer-on-cta.js" defer></script>
+    <script src="./assets/js/lazyload-prioritize.js" defer></script>
+    <script src="./assets/js/form-handler.js" defer></script>
+    <script src="./assets/js/zip.js" defer></script>
+    <script src="./assets/js/accordion.js?251210" defer></script>
+    <script type='text/javascript' src='https://ws1.sinclo.jp/client/5f6d91ef80945.js'></script>
+  </body>
+
+</html>
