@@ -234,16 +234,32 @@ img[width="1"][height="1"] {
   padding-bottom: unset !important;
 }
 #global_footer .gf_pageTop {
-  bottom: 12px ;
+  bottom: 12px;
 }
 @media (min-width: 768px) {
-#global_footer .gf_pageTop {
-  bottom: 64px ;
-}
+  #global_footer .gf_pageTop {
+    bottom: 64px;
+  }
 }
 .module_button._center.button_02._grow {
   display: none !important;
 }
-section{
+section {
   padding-bottom: unset !important;
+}
+iframe[title="名門会 医学部合格者インタビュー 2025"] {
+  width: 100%;
+  aspect-ratio: 500/281;
+  height: auto;
+}
+iframe.wp-embedded-content[sandbox="allow-scripts"] {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  iframe[title="名門会 医学部合格者インタビュー 2025"]{
+    width: 500px;
+  }
+  iframe.wp-embedded-content[sandbox="allow-scripts"] {
+    width: 500px;
+  }
 }
