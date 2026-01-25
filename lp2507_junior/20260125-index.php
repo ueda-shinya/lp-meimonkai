@@ -185,14 +185,13 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
   <script src="/lp/lp2507_junior/assets/js/lazyload-prioritize.js" defer></script>
   <script src="/lp/lp2507_junior/assets/js/form-handler.js" defer></script>
   <script src="/lp/lp2507_junior/assets/js/zip.js" defer></script>
-  <!-- チャットBOTタグ -->
   <script>
     (function() {
       var w = window,
         d = document;
       var s = "https://app.chatplus.jp/cp.js";
       d["__cp_d"] = "https://app.chatplus.jp";
-      d["__cp_c"] = "ad2a2c75_3";
+      d["__cp_c"] = "ad2a2c75_1";
       var a = d.createElement("script"),
         m = d.getElementsByTagName("script")[0];
       a.async = true, a.src = s, m.parentNode.insertBefore(a, m);
