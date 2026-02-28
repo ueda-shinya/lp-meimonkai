@@ -415,7 +415,17 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
     <script src="./assets/js/form-handler.js" defer></script>
     <script src="./assets/js/zip.js" defer></script>
     <script src="./assets/js/accordion.js?251210" defer></script>
-    <script type='text/javascript' src='https://ws1.sinclo.jp/client/5f6d91ef80945.js'></script>
+    <!-- 20260228以降の新チャットBOT -->
+    <script>
+      (function () {
+        var w = window, d = document;
+        var s = "https://app.chatplus.jp/cp.js";
+        d["__cp_d"] = "https://app.chatplus.jp";
+        d["__cp_c"] = "ad2a2c75_3";
+        var a = d.createElement("script"), m = d.getElementsByTagName("script")[0];
+        a.async = true, a.src = s, m.parentNode.insertBefore(a, m);
+      })();
+    </script>
   </body>
 
 </html>
