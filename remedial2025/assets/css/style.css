@@ -291,19 +291,20 @@ img[width="1"][height="1"] {
   width: 1px;
   height: 1px;
 }
-.-btn-cta-tel_a {
+.btn-cta-tel_a {
   display: block;
   width: 80%;
   margin-inline: auto;
   padding: clamp(1px, calc(8 / 750 * 100vw), 8px);
-  background-color: darkorange;
+  background-color: white;
+  border:solid clamp(1px, calc(4 / 750 * 100vw), 4px) #182f55;
   border-radius: clamp(1px, calc(24 / 750 * 100vw), 24px);
   box-shadow: clamp(1px, calc(4 / 750 * 100vw), 4px)
     clamp(1px, calc(4 / 750 * 100vw), 4px)
     clamp(1px, calc(4 / 750 * 100vw), 4px) rgba(33, 33, 33, 0.5);
   transition: 0.3s;
 }
-.-btn-cta-tel_a:hover {
+.btn-cta-tel_a:hover {
   opacity: 0.8;
 }
 .sec-fv {
