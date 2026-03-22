@@ -299,7 +299,7 @@ img[width="1"][height="1"] {
   padding-bottom: clamp(1px, calc(360 / 750 * 100vw), 360px);
 }
 
-.-btn-cta-tel_a {
+.btn-cta-tel_a {
   display: block;
   width: 80%;
   margin-inline: auto;
@@ -311,7 +311,7 @@ img[width="1"][height="1"] {
     clamp(1px, calc(4 / 750 * 100vw), 4px) rgba(33, 33, 33, 0.5);
   transition: 0.3s;
 }
-.-btn-cta-tel_a:hover {
+.btn-cta-tel_a:hover {
   opacity: 0.8;
 }
 .cta-page4 {
