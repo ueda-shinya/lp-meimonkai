@@ -133,17 +133,19 @@ footer a:hover {
 
 /*  */
 .page3-b {
-  padding-top: clamp(1px, calc(130 / 750 * 100vw), 130px);
+  /* padding-top: 540px; */
+  padding-top: clamp(1px, calc(540 / 750 * 100vw), 540px);
   background-color: #f3eee7;
 }
 .cta-btns {
-  display: flex;
+  display: block;
   width: 100%;
   position: absolute;
   justify-content: space-around;
 }
 .btn-cta_img {
   height: auto;
+  margin-inline: auto;
 }
 .btn-tel {
   width: calc(376 / 750 * 100vw);
@@ -151,9 +153,11 @@ footer a:hover {
   aspect-ratio: 188/63;
 }
 .btn-form {
-  width: calc(304 / 750 * 100vw);
-  max-width: 304px;
-  aspect-ratio: 152/63;
+  width: calc(710 / 750 * 100vw);
+  max-width: 710px;
+  /* margin-bottom: 48px; */
+  margin-bottom: clamp(1px, calc(48 / 750 * 100vw), 48px);
+  aspect-ratio: 710/320;
 }
 .cta-fv {
   bottom: clamp(1px, calc(10 / 375 * 100vw), 20px);
@@ -197,7 +201,9 @@ a:hover img {
   /* 初期表示状態 */
   opacity: 1;
   /* transform: translateY(0); */
-  transition: opacity 0.28s ease, transform 0.28s ease;
+  transition:
+    opacity 0.28s ease,
+    transform 0.28s ease;
   will-change: opacity, transform; /* スクロール連動のパフォーマンス補助 */
 }
 
@@ -283,8 +289,34 @@ a:hover img {
   transform: translateX(-50%);
 }
 
-
-img[width="1"][height="1"]{
+img[width="1"][height="1"] {
   width: 1px;
   height: 1px;
+}
+
+.sec-fv {
+  height: auto;
+  padding-bottom: clamp(1px, calc(360 / 750 * 100vw), 360px);
+}
+
+.-btn-cta-tel_a {
+  display: block;
+  width: 80%;
+  margin-inline: auto;
+  padding: clamp(1px, calc(8 / 750 * 100vw), 8px);
+  background-color: darkorange;
+  border-radius: clamp(1px, calc(24 / 750 * 100vw), 24px);
+  box-shadow: clamp(1px, calc(4 / 750 * 100vw), 4px)
+    clamp(1px, calc(4 / 750 * 100vw), 4px)
+    clamp(1px, calc(4 / 750 * 100vw), 4px) rgba(33, 33, 33, 0.5);
+  transition: 0.3s;
+}
+.-btn-cta-tel_a:hover {
+  opacity: 0.8;
+}
+.cta-page4 {
+  height: auto;
+  /* padding-bottom: 350px; */
+  padding-bottom: clamp(1px, calc(350 / 750 * 100vw), 350px);
+  background-color: #e6edff;
 }

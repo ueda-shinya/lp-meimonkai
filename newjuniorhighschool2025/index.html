@@ -45,6 +45,27 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
   </head>
 
   <body>
+    <!-- CAW Tracking Mark Code Start -->
+    <script>
+      ! function (e, t, n, r, a, b, c, s) {
+        e.TrackerObject = a;
+        e[a] = e[a] ||
+          function () {
+            (e[a].q = e[a].q || []).push(arguments);
+          };
+        e[a].l = 1 * new Date;
+        e[a].c = b;
+        q = t.location.search.substring(1);
+        c = t.createElement(n);
+        s = t.getElementsByTagName(n)[0];
+        c.async = 1;
+        c.src = r + "?_t=" + e[a].l + "&_trk-type=mark&_trk-cid=" + b + (q ? "&" + q : "");
+        s.parentNode.insertBefore(c, s);
+      }(window, document, "script", "https://script-ad.mobadme.jp/js/tracker.js", "trk", "51020");
+      trk("configure", "domain", ".meimonkai.co.jp");
+      trk("set", "51020");
+    </script>
+    <!-- CAW Tracking Mark Code End -->
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKW6CZF" height="0" width="0"
         style="display:none;visibility:hidden"></iframe></noscript>
@@ -52,63 +73,62 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
     <header>
     </header>
     <main>
-      <div class="cta-area header-wrapper">
+      <div class="cta-area header-wrapper sec-fv">
         <h1>
           <img src="./assets/images/fv.webp" alt="中学入学から「好スタート」を切るために" width="750" height="1320">
         </h1>
         <!-- CTA-BTNS -->
         <div class="cta-btns cta-fv">
+          <!-- FORM -->
+          <a href="#contact-form">
+            <img class="btn-cta_img   cta_a btn-form" src="./assets/images/cta_mail-2.webp" alt="" width="710"
+              height="320" decoding="async" loading="lazy">
+          </a>
           <!-- TEL -->
-          <a href="tel:0120-14-3759">
+          <a class="btn-cta-tel_a" href="tel:0120-14-3759">
             <img class="btn-cta_img   cta_a btn-tel" src="./assets/images/tel@2x.webp" alt="tel:0120-14-3759"
               width="188" height="63" decoding="async" loading="lazy">
           </a>
-          <!-- FORM -->
-          <a href="#contact-form">
-            <img class="btn-cta_img   cta_a btn-form" src="./assets/images/new_cta@2x.webp" alt="" width="152"
-              height="73" decoding="async" loading="lazy">
-          </a>
         </div>
       </div>
-      <img src="./assets/images/page1.webp"  width="750" height="1105" decoding="async" loading="lazy">
-      <img src="./assets/images/page2.webp"  width="750" height="5883" decoding="async" loading="lazy">
-      <img src="./assets/images/page3-a.webp"  width="750" height="1024" decoding="async" loading="lazy">
-      
+      <img src="./assets/images/page1.webp" width="750" height="1105" decoding="async" loading="lazy">
+      <img src="./assets/images/page2.webp" width="750" height="5883" decoding="async" loading="lazy">
+      <img src="./assets/images/page3-a.webp" width="750" height="1024" decoding="async" loading="lazy">
       <div class="cta-area page3-b">
         <img src="./assets/images/page3-b.webp" alt="" width="750" height="2744" decoding="async" loading="lazy">
         <!-- CTA-BTNS -->
         <div class="cta-btns cta-page3">
+                  <!-- FORM -->
+          <a href="#contact-form">
+            <img class="btn-cta_img  cta_a btn-form" src="./assets/images/cta_mail-2.webp" alt="" width="710"
+              height="320" decoding="async" loading="lazy">
+          </a>
           <!-- TEL -->
-          <a href="tel:0120-14-3759">
+          <a  class="btn-cta-tel_a"  href="tel:0120-14-3759">
             <img class="btn-cta_img   cta_a btn-tel" src="./assets/images/tel@2x.webp" alt="tel:0120-14-3759"
               width="188" height="63" decoding="async" loading="lazy">
           </a>
-          <!-- FORM -->
-          <a href="#contact-form">
-            <img class="btn-cta_img  cta_a btn-form" src="./assets/images/new_cta@2x.webp" alt="" width="152"
-              height="73" decoding="async" loading="lazy">
-          </a>
+  
         </div>
       </div>
-      
-      <div class="cta-area">
+      <div class="cta-area cta-page4">
         <img src="./assets/images/middlecta@2x.webp" alt="" width="375" height="381" decoding="async" loading="lazy">
         <!-- CTA-BTNS -->
         <div class="cta-btns cta-middle">
+                   <!-- FORM -->
+          <a href="#contact-form">
+            <img class="btn-cta_img  cta_a btn-form" src="./assets/images/cta_mail-2.webp" alt="" width="710"
+              height="320" decoding="async" loading="lazy">
+          </a>
           <!-- TEL -->
-          <a href="tel:0120-14-3759">
+          <a   class="btn-cta-tel_a"  href="tel:0120-14-3759">
             <img class="btn-cta_img   cta_a btn-tel" src="./assets/images/tel@2x.webp" alt="tel:0120-14-3759"
               width="188" height="63" decoding="async" loading="lazy">
           </a>
-          <!-- FORM -->
-          <a href="#contact-form">
-            <img class="btn-cta_img  cta_a btn-form" src="./assets/images/new_cta@2x.webp" alt="" width="152"
-              height="73" decoding="async" loading="lazy">
-          </a>
+ 
         </div>
       </div>
-      
-      <img src="./assets/images/page4.webp"  width="750" height="2827" decoding="async" loading="lazy">
+      <img src="./assets/images/page4.webp" width="750" height="2827" decoding="async" loading="lazy">
       <form id="contact-form" name="contact" action="sendmail.php" method="POST">
         <h2>無料個別相談のお申込み</h2>
         <!-- ご希望の場所 -->
@@ -228,7 +248,18 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
     <script src="./assets/js/lazyload-prioritize.js" defer></script>
     <script src="./assets/js/form-handler.js" defer></script>
     <script src="./assets/js/zip.js" defer></script>
-    <script type='text/javascript' src='https://ws1.sinclo.jp/client/5f6d91ef80945.js'></script>
+    <script>
+      (function () {
+        var w = window,
+          d = document;
+        var s = "https://app.chatplus.jp/cp.js";
+        d["__cp_d"] = "https://app.chatplus.jp";
+        d["__cp_c"] = "ad2a2c75_1";
+        var a = d.createElement("script"),
+          m = d.getElementsByTagName("script")[0];
+        a.async = true, a.src = s, m.parentNode.insertBefore(a, m);
+      })();
+    </script>
   </body>
 
 </html>
