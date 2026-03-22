@@ -158,7 +158,7 @@ footer a:hover {
 }
 .cta-fv {
   padding: clamp(1px, calc(13 / 375 * 100vw), 26px) 0;
-  bottom: clamp(1px, calc(10 / 375 * 100vw), 20px);
+  bottom: clamp(1px, calc(28 / 750 * 100vw), 28px);
   /* background-color: #2235dc; */
   background-color: #e6edff;
 }
@@ -311,7 +311,7 @@ img[width="1"][height="1"] {
 }
 .middle-area {
   height: auto;
-  padding-bottom: clamp(1px, calc(310 / 750 * 100vw), 310px);
+  padding-bottom: clamp(1px, calc(280 / 750 * 100vw), 280px);
   /* padding-bottom: 310px; */
   background-color: #e6edff;
 }
