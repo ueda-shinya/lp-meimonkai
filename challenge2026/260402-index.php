@@ -213,45 +213,6 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
                 </div>
               </div>
             </article>
-                        <!-- item 9 -->
-            <article class="accordion__item" data-accordion-item>
-              <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="acc-panel-1"
-                id="acc-trigger-9" data-accordion-trigger>
-                <img src="./assets/images/accordion-q9-btn.webp" width="730" height="153" decoding="async"
-                  loading="lazy">
-                <span class="accordion__trigger-icon" aria-hidden="true">
-                  <p>▶</p>
-                </span>
-              </button>
-              <div class="accordion__panel" id="acc-panel-9" role="region" aria-labelledby="acc-trigger-1" hidden
-                data-accordion-panel>
-                <div class="accordion__body">
-                  <img src="./assets/images/accordion-q9-body.webp" width="750" height="1035" decoding="async"
-                    loading="lazy">
-                  <!--  -->
-                </div>
-              </div>
-            </article>
-            <!-- item 10 -->
-            <article class="accordion__item" data-accordion-item>
-              <button class="accordion__trigger" type="button" aria-expanded="false" aria-controls="acc-panel-1"
-                id="acc-trigger-10" data-accordion-trigger>
-                <img src="./assets/images/accordion-q10-btn.webp" width="730" height="153" decoding="async"
-                  loading="lazy">
-                <span class="accordion__trigger-icon" aria-hidden="true">
-                  <p>▶</p>
-                </span>
-              </button>
-              <div class="accordion__panel" id="acc-panel-10" role="region" aria-labelledby="acc-trigger-1" hidden
-                data-accordion-panel>
-                <div class="accordion__body">
-                  <img src="./assets/images/accordion-q10-body.webp" width="750" height="1035" decoding="async"
-                    loading="lazy">
-                  <!--  -->
-                </div>
-              </div>
-            </article>
-
           </div>
         </div>
       </section>
