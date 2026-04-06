@@ -259,6 +259,7 @@ a:hover img {
   color: darkorange;
   font-weight: 700;
   position: relative;
+  filter: drop-shadow(4px,4px,10px,rgba(0,0,0,0.25));
 }
 .p-thanks-text-box-tel_a::before {
   content: "";
